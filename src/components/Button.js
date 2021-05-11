@@ -2,14 +2,14 @@ import React from 'react';
 
 const Button = (props) => {
     return (
-        <button className={`${props.class}`}
+        <button className={`${props.css}`}
             data-id={props.id}
             name={props.name}
             disabled={props.disabled}
             onClick={props.handleClick}
         >
             <h4>
-                {props.label}
+                {props.children}
             </h4>
         </button>
     );
